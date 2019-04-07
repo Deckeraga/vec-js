@@ -4,7 +4,7 @@ Vec-js is a 2D and 3D vector math library for Nodejs.
 # Installation
 npm
 ```sh
-npm install vec-js
+npm i @deckeraga/vec-js
 ```
 
 # Building/Testing 
