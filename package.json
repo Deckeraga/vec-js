@@ -1,0 +1,39 @@
+{
+  "name": "@deckeraga/vec-js",
+  "version": "1.0.0",
+  "description": "2D and 3D vector math library.",
+  "author": "Alec Decker",
+  "license": "MIT",
+  "keywords": [
+    "Vector",
+    "Geometry",
+    "Linear Algebra",
+    "Graphics"
+  ],
+  "files": [
+    "dist/**/*"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "docs": "rm -rf docs/ && typedoc src/",
+    "precommit": "npm run format && npm run lint && npm run test && npm run docs && echo 'All clear for commit.'",
+    "prepublish": "npm run test && npm run build"
+  },
+  "pre-commit": "precommit",
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "jest": "^24.5.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.16.4",
+    "ts-jest": "^24.0.0",
+    "tslint": "^5.14.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typedoc": "^0.14.2",
+    "typescript": "^3.3.4000"
+  }
+}
