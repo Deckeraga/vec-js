@@ -2,18 +2,24 @@
 Vec-js is a 2D and 3D vector math library for Nodejs. 
 
 # Installation
-npm \
-`npm install vec-js`
+npm
+```sh
+npm install vec-js
+```
 
 # Building/Testing 
-Build with \
-`npm run build`
+Build with 
+```sh
+npm run build
+```
 
-Run Jest unit tests with \
-`npm run test`
+Run Jest unit tests with
+```sh
+npm run test
+```
 
 # Example
-```
+```javascript
 Vector3.up()
     .scale(15)
     .dot(new Vector3(1, 12, 8));
